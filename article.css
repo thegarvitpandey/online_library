@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /*----------------------------- for the scrolling the website when clicked on menu items smoothly --------------*/
+}
+
+body {
+    background: #5C717F;
+    color: #fff;
+}
+
+/*----------------------------------------------------------Nav Bar-------------------------------------------------*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar-title {
+    font-family: 'Roboto+Slab', 'comic sans';
+    font-weight: 500;
+    text-decoration: none;
+    font-size: xx-large;
+    margin-left: 27px;
+    color: rgb(255, 255, 255);
+}
+
+
+#searchButton {
+    border-radius: 30%;
+    margin-right: 10px;
+}
+
+/*-----------------------------------------------------section 1----------------------------------------------------*/
+.section1 {
+    background: #31ca9a;
+}
+
+/*--------------------------------------------------h1 (collection of books) 3d appearance ----------------------------*/
+.main-title {
+    position: relative;
+    /* Change from absolute to relative */
+    z-index: 1;
+    /* Set z-index to make sure it appears above other elements */
+    padding-top: 40px;
+    /* Adjust margin-top to create space above other content */
+    text-align: center;
+    /* Center the text horizontally */
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 4em;
+    /* Adjust the font size as needed */
+    font-weight: 700;
+    font-size: 600%;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+        1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2),
+        1px 25px 35px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+
+
+/*-----------------------------------------------------------------category---------------------------------------*/
+
+.category {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    font-size: 57px;
+}
+
+/*----------------------------------------------------------------h5------------------- --------------------------------*/
+
+h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+}
+
+
+/*-----------------------------------------------------------------p--------------------------------------------------------*/
+
+p {
+    font-family: "Caveat", "cursive";
+    font-optical-sizing: auto;
+    font-weight: 900;
+}
+
+
+/*-------------------------------------------------------------Blurr tranisition----------------------------------------*/
+
+body.blur-effect .section-title,
+body.blur-effect .card {
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.container:hover .card:not(:hover) {
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+}
+
+.btn-primary {
+    transition: color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    animation: colorChange 1.5s infinite alternate;
+    width: 70%;
+    border-radius: 19px;
+}
+
+@keyframes colorChange {
+    0% {
+        color: currentColor;
+    }
+
+    100% {
+        background: #027a95;
+    }
+}
+
+/*---------------------------------------------------------------------footer-----------------------------------------------*/
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    color: white;
+}
+
+.cpy-txt {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+.copyright i {
+    color: #ff004f;
+}
